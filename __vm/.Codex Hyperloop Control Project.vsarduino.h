@@ -25,8 +25,14 @@
 
 //
 //
+void preLaunchLoop ();
+void accelerationStage ();
+void coastingStage ();
+void brakingStage ();
 
 #include "pins_arduino.h" 
 #include "variant.h" 
 #include "arduino.h"
 #include "CodexHyperloopControlProject.ino"
+#include "StageFunctions.ino"
+#include "SupportFunctions.ino"
