@@ -15,48 +15,34 @@ void accelerationStage () {
 
 void coastingStage () {
 	// Make sure levitation arrays are in the right position
+	
+	// Determine when and where to brake based on velocity and position
 }
 
-// Third Stage - Braking (Magnetic & Friction)
-int brakeStage = 0;
-void brakingStage () {
-	// Determine which braking stage we're in
-	
-	switch (brakeStage) {
-		case 0: { 	// Activate magnetic braking
+// --------------------------------------------------------
+// concern- having a set brake position might not work depending on speed variability, must consider the distance needed to brake.
+// --------------------------------------------------------
 
+// Third Stage - Activate magnetic brakes
+void activateMagneticBrakes () {
+	// PID loops using encoder, proximity sensor
+	
+	// stop at 0.1 inches from I-beam
+}
 
-					// PID loops using encoder, proximity sensor 
-					
-					// stop at 0.1 inches from I-beam
-		}; 
-		break;
-		
-		case 1: { // Lift levitation array
-			// PID loops using proximity data and encoder 
-			
-			// stop when distance (0.1 inches) from I beam
-		}; 
-		break;
-		 
-		case 2: { // activate disk brakes (60 or 80 m/s)
- 			
-		};
-		break;
-		
-		case 3: { // stop magnetic brakes ( 6 or 8 m/s)
-			
-				  //  stop when distance is 1.0962 inches from the I-beam
-		};
-		break;
-		
-	}
-	 // concern- having a set brake position might not work depending on speed variability, must consider the distance needed to brake. 
+// Fourth Stage - Lift levitation arrays
+void liftLevitationArrays () {
+	// PID loops using proximity data and encoder
 	
-	// Lower Magnetic brakes 
+	// stop when distance (0.1 inches) from I beam
+}
+
+// Fifth Stage - Activate disk brakes (at 60 or 80 m/s)
+void activateDiskBrakes () {
 	
-	// Activate disk brakes
-	
-	
-	// Stop Magnetic brakes
+}
+
+// Sixth Stage - Stop magnetic brakes (at 6 or 8 m/s)
+void deactivateMagneticBrakes () {
+	//  stop when distance is 1.0962 inches from the I-beam
 }
