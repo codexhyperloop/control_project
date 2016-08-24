@@ -22,7 +22,6 @@
 //
 //
 void preLaunchLoop ();
-void accelerationStage ();
 void coastingStage ();
 void activateMagneticBrakes ();
 void liftLevitationArrays ();
