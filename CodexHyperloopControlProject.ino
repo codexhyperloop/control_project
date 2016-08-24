@@ -1,10 +1,5 @@
 // Declare variables
-<<<<<<< HEAD
-
-=======
-int stage = 0;
-int test = 10;
->>>>>>> origin/master
+int Rohan=0;
 
 struct {
 	float position, velocity, acceleration;
