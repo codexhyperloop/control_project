@@ -5,19 +5,23 @@
 	        all non-arduino files created by visual micro and all visual studio project or solution files can be freely deleted and are not required to compile a sketch (do not delete your own code!).
 	        note: debugger breakpoints are stored in '.sln' or '.asln' files, knowledge of last uploaded breakpoints is stored in the upload.vmps.xml file. Both files are required to continue a previous debug session without needing to compile and upload again
 	
-	Hardware: Arduino/Genuino Uno, Platform=avr, Package=arduino
+	Hardware: UDOO QDL (Arduino Due), Platform=sam, Package=UDOO
 */
 
-#define __AVR_ATmega328p__
-#define __AVR_ATmega328P__
-#define ARDUINO 10609
+#define ARDUINO 106010
 #define ARDUINO_MAIN
-#define F_CPU 16000000L
-#define __AVR__
-#define F_CPU 16000000L
-#define ARDUINO 10609
-#define ARDUINO_AVR_UNO
-#define ARDUINO_ARCH_AVR
+#define F_CPU 84000000L
+#define printf iprintf
+#define __SAM__
+#define printf iprintf
+#define F_CPU 84000000L
+#define ARDUINO 106010
+#define ARDUINO_SAM_DUE
+#define ARDUINO_ARCH_SAM
+#define __SAM3X8E__
+#define USB_VID 0x2341
+#define USB_PID 0x003e
+#define USBCON
 
 //
 //
@@ -30,6 +34,7 @@ void activateDiskBrakes ();
 void deactivateMagneticBrakes ();
 
 #include "pins_arduino.h" 
+#include "variant.h" 
 #include "arduino.h"
 #include "CodexHyperloopControlProject.ino"
 #include "StageFunctions.ino"
