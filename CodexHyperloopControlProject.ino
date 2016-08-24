@@ -1,5 +1,5 @@
 // Declare variables
-int Rohan=0;
+
 int stage = 0;
 int test = 10;
 
