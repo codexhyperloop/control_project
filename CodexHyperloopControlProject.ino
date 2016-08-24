@@ -1,5 +1,5 @@
 // Declare variables
-int stage = 0;
+
 
 struct {
 	float position, velocity, acceleration;
