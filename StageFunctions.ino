@@ -12,19 +12,17 @@ void accelerationStage () {
 }
 
 // Second Stage - Coasting
-
 void coastingStage () {
 	// Make sure levitation arrays are in the right position
 	
 	// Determine when and where to brake based on velocity and position
 }
 
-// --------------------------------------------------------
-// concern- having a set brake position might not work depending on speed variability, must consider the distance needed to brake.
-// --------------------------------------------------------
-
 // Third Stage - Activate magnetic brakes
 void activateMagneticBrakes () {
+	// Not entirely sure how this will work. We may not be controlling magnet
+	// position using the stepper motors bc they may not have enough power
+	
 	// PID loops using encoder, proximity sensor
 	
 	// stop at 0.1 inches from I-beam
@@ -39,7 +37,7 @@ void liftLevitationArrays () {
 
 // Fifth Stage - Activate disk brakes (at 60 or 80 m/s)
 void activateDiskBrakes () {
-	
+	// PID encoders to keep all 4 wheels braking equally, ABS (Anti-Lock Braking System)
 }
 
 // Sixth Stage - Stop magnetic brakes (at 6 or 8 m/s)
