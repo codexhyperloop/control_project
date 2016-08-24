@@ -25,6 +25,8 @@ void coastingStage () {
 	// Make sure levitation arrays are in the right position
 	
 	// Determine when and where to brake based on velocity and position
+	int formula = 3;
+	startBrakingPosition = formula;
 }
 
 // Third Stage - Activate magnetic brakes

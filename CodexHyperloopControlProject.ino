@@ -1,13 +1,12 @@
-// Declare variables
-
-int stage = 0;
-int test = 10;
-
 struct {
 	float position, velocity, acceleration;
 } physicsData;
 
+// Declare variables
+int stage = 0; 
+float startBrakingPosition;
 physicsData essentialData;
+
 
 void setup()
 {	
@@ -38,27 +37,32 @@ void setup()
 void loop()
 {
 	// Get critical info (velocity and pod position) only and determine logic stage
-	if ( position <=  && velocity >= 10 )
+	// --> measured in m, m/s, m/s^2 respectively
+	essentialData.position = 1; // really will be something like - essentialData.position = readUDOO.position; or something like that idk
+    essentialData.velocity = 1;
+	essentialData.acceleration = 1;
+	
+	if (essentialData.velocity >= 10 && essentialData.acceleration >= 15) // Acceleration stage
 	{
 		stage = 1;
 	} 
-	else if (position <=  && velocity >= ) // coasting
+	else if (essentialData.position <= startBrakingPosition && essentialData.velocity >= ) // coasting
 	{
 		stage = 2;
 	}
-	else if (position <=  && velocity >= ) // activate magnetic braking
+	else if (essentialData.position <=  && essentialData.velocity >= ) // activate magnetic braking
 	{
 		stage = 3;
 	}
-	else if (position <=  && velocity >= ) // Lift levitation arrays
+	else if (essentialData.position <=  && essentialData.velocity >= ) // Lift levitation arrays
 	{
 		stage = 4;
 	}
-	else if (position <=  && velocity >= 80 ) // Activate disk brakes (at 60 or 80 m/s)
+	else if (essentialData.position <=  && essentialData.velocity >= 80 ) // Activate disk brakes (at 60 or 80 m/s)
 	{
 		stage = 5;
 	}
-	else if (position <=  && velocity >= 8) //Deactivate magnetic brakes (at 6 or 8 m/s)
+	else if (essentialData.position <=  && essentialData.velocity >= 8) //Deactivate magnetic brakes (at 6 or 8 m/s)
 	{
 		stage = 6;
 	}
