@@ -1,11 +1,13 @@
-struct {
+typedef struct {
 	float position, velocity, acceleration;
 } physicsData;
 
 // Declare variables
 int stage = 0; 
-float startBrakingPosition;
-physicsData essentialData;
+float startBrakingPosition = 750; // The position at which we need to start braking
+bool magBrakesActivated = LOW; // Lets us know when the magnetic brakes have finished activating
+bool levArraysLifted = HIGH; // Lets us know when the levitation arrays are lifted
+physicsData essentialData; // Current position, velocity, and acceleration
 
 
 void setup()
@@ -41,28 +43,30 @@ void loop()
 	essentialData.position = 1; // really will be something like - essentialData.position = readUDOO.position; or something like that idk
     essentialData.velocity = 1;
 	essentialData.acceleration = 1;
-	
-	if (essentialData.velocity >= 10 && essentialData.acceleration >= 15) // Acceleration stage
-	{
+	 
+	if ((essentialData.acceleration >= 15 /* || spaceX.begun */) && stage == 0) // Acceleration stage
+	{	// If acceleration is greater than 15 m/s^2 or if spaceX gives us the signal that the run has begun
 		stage = 1;
+		/* spaceX.begun = LOW; */
 	} 
-	else if (essentialData.position <= startBrakingPosition && essentialData.velocity >= ) // coasting
-	{
+	else if ((essentialData.acceleration <= 5 /* || spaceX.done */) && stage == 1) // coasting
+	{   // If acceleration falls below 5 m/s^2 or if spaceX gives us the signal that they stopped pushing our pod
 		stage = 2;
+		/* spaceX.done = LOW; */
 	}
-	else if (essentialData.position <=  && essentialData.velocity >= ) // activate magnetic braking
-	{
+	else if (essentialData.position >= startBrakingPosition && stage == 2) // activate magnetic braking
+	{   // If we have reached the calculated position to start braking, then start braking
 		stage = 3;
 	}
-	else if (essentialData.position <=  && essentialData.velocity >= ) // Lift levitation arrays
+	else if (magBrakesActivated && stage == 3) // Lift levitation arrays
 	{
 		stage = 4;
 	}
-	else if (essentialData.position <=  && essentialData.velocity >= 80 ) // Activate disk brakes (at 60 or 80 m/s)
+	else if (essentialData.velocity <= 80 && levArraysLifted && stage == 4) // Activate disk brakes (at 60 or 80 m/s)
 	{
 		stage = 5;
 	}
-	else if (essentialData.position <=  && essentialData.velocity >= 8) //Deactivate magnetic brakes (at 6 or 8 m/s)
+	else if (essentialData.velocity <= 8 && stage == 5) //Deactivate magnetic brakes (at 6 or 8 m/s)
 	{
 		stage = 6;
 	}

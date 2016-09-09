@@ -16,7 +16,7 @@ void coastingStage () {
 	// Make sure levitation arrays are in the right position
 	
 	// Determine when and where to brake based on velocity and position
-	int formula = 3;
+	int formula = 3/*this 3 needs to be replaced with some formula to calculate when we need to brake*/;
 	startBrakingPosition = formula;
 }
 
@@ -28,6 +28,9 @@ void activateMagneticBrakes () {
 	// PID loops using encoder, proximity sensor
 	
 	// stop at 0.1 inches from I-beam
+	if (3/* mag brakes are fully activated*/) {
+		magBrakesActivated = HIGH;
+	}
 }
 
 // Fourth Stage - Lift levitation arrays
@@ -35,6 +38,9 @@ void liftLevitationArrays () {
 	// PID loops using proximity data and encoder
 	
 	// stop when distance (0.1 inches) from I beam
+	if (3/* levitation arrays have been lifted */) {
+		levArraysLifted = HIGH;
+	}
 }
 
 // Fifth Stage - Activate disk brakes (at 60 or 80 m/s)
