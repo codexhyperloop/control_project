@@ -64,6 +64,13 @@
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
     <ListValues>
+<<<<<<< HEAD
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
+      <Value>C:/Users/Rohan Aby/Documents/Arduino/libraries</Value>
+=======
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/variants/udooqdl</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
@@ -71,6 +78,7 @@
       <Value>C:/Users/Josh/Documents/Arduino/libraries</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/avr</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/USB</Value>
+>>>>>>> origin/master
       <Value>../../../control_project</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/CMSIS/Include/</Value>
@@ -112,6 +120,13 @@
   </armgcccpp.compiler.symbols.DefSymbols>
   <armgcccpp.compiler.directories.IncludePaths>
     <ListValues>
+<<<<<<< HEAD
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
+      <Value>C:/Users/Rohan Aby/Documents/Arduino/libraries</Value>
+=======
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/variants/udooqdl</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
@@ -119,6 +134,7 @@
       <Value>C:/Users/Josh/Documents/Arduino/libraries</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/avr</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/USB</Value>
+>>>>>>> origin/master
       <Value>../../../control_project</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/CMSIS/Include/</Value>
@@ -194,6 +210,13 @@
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
     <ListValues>
+<<<<<<< HEAD
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
+      <Value>C:/Users/Rohan Aby/Documents/Arduino/libraries</Value>
+=======
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/variants/udooqdl</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
@@ -201,6 +224,7 @@
       <Value>C:/Users/Josh/Documents/Arduino/libraries</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/avr</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/USB</Value>
+>>>>>>> origin/master
       <Value>../../../control_project</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/CMSIS/Include/</Value>
@@ -242,6 +266,13 @@
   </armgcccpp.compiler.symbols.DefSymbols>
   <armgcccpp.compiler.directories.IncludePaths>
     <ListValues>
+<<<<<<< HEAD
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/libraries</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
+      <Value>C:/Users/Rohan Aby/Documents/Arduino/libraries</Value>
+=======
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/variants/udooqdl</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
@@ -249,6 +280,7 @@
       <Value>C:/Users/Josh/Documents/Arduino/libraries</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/avr</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/USB</Value>
+>>>>>>> origin/master
       <Value>../../../control_project</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam</Value>
       <Value>C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/CMSIS/Include/</Value>
