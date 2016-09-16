@@ -83,7 +83,7 @@ void loop()
 		break;
 		
 		case 1: { // First stage - Acceleration 
-			accelerationStage(); 
+			accelerationStage();
 		};
 		break;
 		

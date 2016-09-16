@@ -1,23 +1,18 @@
-
 // Pre-launch
 void preLaunchLoop () {
 	// Probably don't need this function... but maybe
 }
 
 // First Stage - Acceleration
-void accelerationStage (//getproximitydata here and use it in the function) { 
+void accelerationStage (//getproximitydata here and use it in the function) {
+	
 	/* how do you lower it down? 
 		use the proximity sensor to do this and check this with this data. 
-		// Lower levitation array to 2.8 inches 
 	
-	 PID loops using proximity data and encoder
-	 
+	// Lower levitation array to 2.8 inches 
+	
+	// PID loops using proximity data and encoder 
 	 if(getproximitydata==2.8)
-	 
-	 
-	 
-	  */
-		
 }
 
 // Second Stage - Coasting
