@@ -49,23 +49,25 @@
   <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
   <armgcc.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__AVR_ATmega328p__</Value>
-      <Value>__AVR_ATmega328P__</Value>
-      <Value>ARDUINO=10609</Value>
+      <Value>__AVR_ATmega32u4__</Value>
+      <Value>__AVR_ATmega32U4__</Value>
+      <Value>ARDUINO=106010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=16000000L</Value>
       <Value>__AVR__</Value>
-      <Value>ARDUINO_AVR_UNO</Value>
+      <Value>ARDUINO_AVR_YUN</Value>
       <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x8041</Value>
     </ListValues>
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
     <ListValues>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/yun</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
-      <Value>C:/Users/Rohan Aby/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/codiw/Documents/Arduino/libraries</Value>
       <Value>../../../control_project</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr//avr/include/avr/</Value>
@@ -78,23 +80,25 @@
   <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
   <armgcccpp.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__AVR_ATmega328p__</Value>
-      <Value>__AVR_ATmega328P__</Value>
-      <Value>ARDUINO=10609</Value>
+      <Value>__AVR_ATmega32u4__</Value>
+      <Value>__AVR_ATmega32U4__</Value>
+      <Value>ARDUINO=106010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=16000000L</Value>
       <Value>__AVR__</Value>
-      <Value>ARDUINO_AVR_UNO</Value>
+      <Value>ARDUINO_AVR_YUN</Value>
       <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x8041</Value>
     </ListValues>
   </armgcccpp.compiler.symbols.DefSymbols>
   <armgcccpp.compiler.directories.IncludePaths>
     <ListValues>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/yun</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
-      <Value>C:/Users/Rohan Aby/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/codiw/Documents/Arduino/libraries</Value>
       <Value>../../../control_project</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr//avr/include/avr/</Value>
@@ -129,7 +133,7 @@
   <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
 </ArmGccCpp>
     </ToolchainSettings>
-    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/libraries;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/libraries;C:/Users/Josh/Documents/Arduino/libraries;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/avr;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/USB;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/variants/udooqdl;../../../CodexHyperloopControlProject;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/CMSIS/Include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/sam3xa/include/pio;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/CMSIS/CMSIS/Include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/sam3xa/include;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL;../../../Codex Hyperloop Control Project;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/xxizpxrf.xxn/Micro Platforms/default/debuggers;../../../control_project;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries;C:/Users/Rohan Aby/Documents/Arduino/libraries;../../../control_project-5fa692e83258f6b23a36164610f21a80d3dc08b7;C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/;C:/Program Files (x86)/Arduino/hardware/tools/avr//avr/include/avr/;C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.8.1/include;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/libraries;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/libraries;C:/Users/Josh/Documents/Arduino/libraries;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/avr;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/USB;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/variants/udooqdl;../../../CodexHyperloopControlProject;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/CMSIS/Include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/sam3xa/include/pio;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/CMSIS/CMSIS/Include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/sam3xa/include;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL;../../../Codex Hyperloop Control Project;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/xxizpxrf.xxn/Micro Platforms/default/debuggers;../../../control_project;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries;C:/Users/Rohan Aby/Documents/Arduino/libraries;../../../control_project-5fa692e83258f6b23a36164610f21a80d3dc08b7;C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/;C:/Program Files (x86)/Arduino/hardware/tools/avr//avr/include/avr/;C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.8.1/include;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/yun;C:/Users/codiw/Documents/Arduino/libraries;</VMSETTING_IncludePaths>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
@@ -141,23 +145,25 @@
   <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
   <armgcc.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__AVR_ATmega328p__</Value>
-      <Value>__AVR_ATmega328P__</Value>
-      <Value>ARDUINO=10609</Value>
+      <Value>__AVR_ATmega32u4__</Value>
+      <Value>__AVR_ATmega32U4__</Value>
+      <Value>ARDUINO=106010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=16000000L</Value>
       <Value>__AVR__</Value>
-      <Value>ARDUINO_AVR_UNO</Value>
+      <Value>ARDUINO_AVR_YUN</Value>
       <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x8041</Value>
     </ListValues>
   </armgcc.compiler.symbols.DefSymbols>
   <armgcc.compiler.directories.IncludePaths>
     <ListValues>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/yun</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
-      <Value>C:/Users/Rohan Aby/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/codiw/Documents/Arduino/libraries</Value>
       <Value>../../../control_project</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr//avr/include/avr/</Value>
@@ -170,23 +176,25 @@
   <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
   <armgcccpp.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__AVR_ATmega328p__</Value>
-      <Value>__AVR_ATmega328P__</Value>
-      <Value>ARDUINO=10609</Value>
+      <Value>__AVR_ATmega32u4__</Value>
+      <Value>__AVR_ATmega32U4__</Value>
+      <Value>ARDUINO=106010</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>F_CPU=16000000L</Value>
       <Value>__AVR__</Value>
-      <Value>ARDUINO_AVR_UNO</Value>
+      <Value>ARDUINO_AVR_YUN</Value>
       <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x8041</Value>
     </ListValues>
   </armgcccpp.compiler.symbols.DefSymbols>
   <armgcccpp.compiler.directories.IncludePaths>
     <ListValues>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard</Value>
+      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/yun</Value>
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries</Value>
-      <Value>C:/Users/Rohan Aby/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/codiw/Documents/Arduino/libraries</Value>
       <Value>../../../control_project</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr//avr/include/avr/</Value>
@@ -221,7 +229,7 @@
   <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
 </ArmGccCpp>
     </ToolchainSettings>
-    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/libraries;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/libraries;C:/Users/Josh/Documents/Arduino/libraries;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/avr;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/USB;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/variants/udooqdl;../../../CodexHyperloopControlProject;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/CMSIS/Include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/sam3xa/include/pio;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/CMSIS/CMSIS/Include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/sam3xa/include;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL;../../../Codex Hyperloop Control Project;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/xxizpxrf.xxn/Micro Platforms/default/debuggers;../../../control_project;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries;C:/Users/Rohan Aby/Documents/Arduino/libraries;../../../control_project-5fa692e83258f6b23a36164610f21a80d3dc08b7;C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/;C:/Program Files (x86)/Arduino/hardware/tools/avr//avr/include/avr/;C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.8.1/include;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>C:/Program Files (x86)/Arduino/libraries;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/libraries;C:/Users/Josh/Documents/Arduino/libraries;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/avr;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/cores/arduino/USB;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/variants/udooqdl;../../../CodexHyperloopControlProject;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/CMSIS/Include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/;C:/Users/Josh/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/libsam/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include;C:/Program Files (x86)/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/sam3xa/include/pio;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/CMSIS/CMSIS/Include/;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL/sam3xa/include;C:/Users/Josh/AppData/Local/arduino15/packages/UDOO/hardware/sam/1.6.6-00020-g250f7ba/system/CMSIS/Device/ATMEL;../../../Codex Hyperloop Control Project;C:/Program Files (x86)/Atmel/Studio/7.0/Extensions/xxizpxrf.xxn/Micro Platforms/default/debuggers;../../../control_project;C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/standard;C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries;C:/Users/Rohan Aby/Documents/Arduino/libraries;../../../control_project-5fa692e83258f6b23a36164610f21a80d3dc08b7;C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/;C:/Program Files (x86)/Arduino/hardware/tools/avr//avr/include/avr/;C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.8.1/include;C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/yun;C:/Users/codiw/Documents/Arduino/libraries;</VMSETTING_IncludePaths>
   </PropertyGroup>
   <ItemGroup>
     <None Include="CodexHyperloopControlProject.ino">

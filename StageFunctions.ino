@@ -4,7 +4,7 @@ void preLaunchLoop () {
 }
 
 // First Stage - Acceleration
-void accelerationStage (//getproximitydata here and use it in the function) {
+void accelerationStage(/*getproximitydata here and use it in the function*/) {
 	
 	/* how do you lower it down? 
 		use the proximity sensor to do this and check this with this data. 
@@ -13,15 +13,25 @@ void accelerationStage (//getproximitydata here and use it in the function) {
 	
 	// PID loops using proximity data and encoder 
 	 if(getproximitydata==2.8)
+	 
+	 */
 }
 
 // Second Stage - Coasting
 void coastingStage () {
 	// Make sure levitation arrays are in the right position
+		//Monitoring should be done at all times in the main loop
 	
-	// Determine when and where to brake based on velocity and position
-	int formula = 3/*this 3 needs to be replaced with some formula to calculate when we need to brake*/;
-	startBrakingPosition = formula;
+	// Determine when and where to brake based on velocity and position (will need to know mass and friction coefficient)
+	
+	//!!!!!!**************************Theoretical braking distance (will need engineers to modify)*******************************!!!!!!
+	int brakeDistance = (essentialData.velocity * essentialData.velocity)/(2 * frictionK * gravity) ;
+
+	//Calculate track position to brake
+	int stopLocation = (trackLength - brakeDistance - safety);
+	
+	//int formula = 3/*this 3 needs to be replaced with some formula to calculate when we need to brake*/;
+	//startBrakingPosition = formula;
 }
 
 // Third Stage - Activate magnetic brakes
