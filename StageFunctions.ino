@@ -25,10 +25,10 @@ void coastingStage () {
 	// Determine when and where to brake based on velocity and position (will need to know mass and friction coefficient)
 	
 	//!!!!!!**************************Theoretical braking distance (will need engineers to modify)*******************************!!!!!!
-	int brakeDistance = (essentialData.velocity * essentialData.velocity)/(2 * frictionK * gravity) ;
+	//int brakeDistance = (essentialData.velocity * essentialData.velocity)/(2 * frictionK * gravity) ;
 
 	//Calculate track position to brake
-	int stopLocation = (trackLength - brakeDistance - safety);
+	//int stopLocation = (trackLength - brakeDistance - safety);
 	
 	//int formula = 3/*this 3 needs to be replaced with some formula to calculate when we need to brake*/;
 	//startBrakingPosition = formula;
@@ -40,6 +40,16 @@ void activateMagneticBrakes () {
 	// position using the stepper motors bc they may not have enough power
 	
 	// PID loops using encoder, proximity sensor
+	
+	
+	PIDImpl::calculate( setpoint_position,pv_position); // check if same name as on read_project. 
+	/*
+	
+	
+	*/
+	
+	
+	
 	
 	// stop at 0.1 inches from I-beam
 	if (3/* mag brakes are fully activated*/) {
@@ -59,7 +69,7 @@ void liftLevitationArrays () {
 
 // Fifth Stage - Activate disk brakes (at 60 or 80 m/s)
 void activateDiskBrakes () {
-	// PID encoders to keep all 4 wheels braking equally, ABS (Anti-Lock Braking System)
+	PIDImpl::calculate( );// PID encoders to keep all 4 wheels braking equally, ABS (Anti-Lock Braking System)
 }
 
 // Sixth Stage - Stop magnetic brakes (at 6 or 8 m/s)
