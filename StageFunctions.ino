@@ -41,14 +41,7 @@ void activateMagneticBrakes () {
 	
 	// PID loops using encoder, proximity sensor
 	
-	
-	PIDImpl::calculate( setpoint_position,pv_position); // check if same name as on read_project. 
-	/*
-	
-	
-	*/
-	
-	
+PID PID_activateMagneticBrakes
 	
 	
 	// stop at 0.1 inches from I-beam
