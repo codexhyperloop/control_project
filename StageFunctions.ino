@@ -41,7 +41,7 @@ void activateMagneticBrakes () {
 	
 	// PID loops using encoder, proximity sensor
 	
-
+PID_activateMagneticBrakes.Compute();
 	
 	
 	// stop at 0.1 inches from I-beam
@@ -62,7 +62,7 @@ void liftLevitationArrays () {
 
 // Fifth Stage - Activate disk brakes (at 60 or 80 m/s)
 void activateDiskBrakes () {
-	PIDImpl::calculate( );// PID encoders to keep all 4 wheels braking equally, ABS (Anti-Lock Braking System)
+	// PID encoders to keep all 4 wheels braking equally, ABS (Anti-Lock Braking System)
 }
 
 // Sixth Stage - Stop magnetic brakes (at 6 or 8 m/s)

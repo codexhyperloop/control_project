@@ -238,6 +238,12 @@
     <Folder Include="__vm\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PID_v1.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="PID_v1.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="__vm\.Codex%2520Hyperloop%2520Control%2520Project.vsarduino.h">
       <SubType>compile</SubType>
     </Compile>

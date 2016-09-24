@@ -1,3 +1,4 @@
+#include "PID.h"
 typedef struct {
 	float position, velocity, acceleration;
 } physicsData;
@@ -13,7 +14,7 @@ physicsData essentialData; // Current position, velocity, and acceleration
 double Setpoint, Input, Output;
 
  // object for PIDs
-PID PID_activateMagneticBrakes(&Input, &Output, &Setpoint,2,5,1, 0);
+PID PID_activateMagneticBrakes(&Input, &Output, &Setpoint,2,5,1, DIRECT);
 // PID PID_liftLevitationArrays;
 // PID PID_activateDiskBrakes;
 // PID PID_deactivateMagneticBrakes;
@@ -43,7 +44,7 @@ void setup()
 	// Send green light signal to remote computer
 
 //
-PID_activateMagneticBrakes.SetMode(1);
+PID_activateMagneticBrakes.SetMode(AUTOMATIC);
 
 }
 
