@@ -41,7 +41,7 @@ void activateMagneticBrakes () {
 	
 	// PID loops using encoder, proximity sensor
 	
-PID PID_activateMagneticBrakes
+
 	
 	
 	// stop at 0.1 inches from I-beam

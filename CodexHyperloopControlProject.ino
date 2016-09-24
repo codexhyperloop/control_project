@@ -9,6 +9,14 @@ bool magBrakesActivated = LOW; // Lets us know when the magnetic brakes have fin
 bool levArraysLifted = HIGH; // Lets us know when the levitation arrays are lifted
 physicsData essentialData; // Current position, velocity, and acceleration
 
+//Define Variables we'll be connecting to
+double Setpoint, Input, Output;
+
+ // object for PIDs
+PID PID_activateMagneticBrakes(&Input, &Output, &Setpoint,2,5,1, 0);
+// PID PID_liftLevitationArrays;
+// PID PID_activateDiskBrakes;
+// PID PID_deactivateMagneticBrakes;
 
 void setup()
 {	
@@ -33,6 +41,9 @@ void setup()
 	// --------------------------------------------------------
 
 	// Send green light signal to remote computer
+
+//
+PID_activateMagneticBrakes.SetMode(1);
 
 }
 
