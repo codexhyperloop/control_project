@@ -1,4 +1,9 @@
-#include "PID.h"
+//Necessary for LSM9DS0 to communicate via SPI
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_LSM9DS0.h>
+
 typedef struct {
 	float position, velocity, acceleration;
 } physicsData;
@@ -8,13 +13,25 @@ int stage = 0;
 float startBrakingPosition = 750; // The position at which we need to start braking
 bool magBrakesActivated = LOW; // Lets us know when the magnetic brakes have finished activating
 bool levArraysLifted = HIGH; // Lets us know when the levitation arrays are lifted
+
 physicsData essentialData; // Current position, velocity, and acceleration
+
+	// For LSM9DS0
+		/* For Hardware SPI:
+		SCK -> SPI CLK
+		SDA -> SPI MOSI
+		G_SDO + XM_SDO -> tied together to SPI MISO
+		then select any two pins for the two CS lines:
+		*/
+		#define LSM9DS0_XM_CS 15
+		#define LSM9DS0_GYRO_CS 14
+		Adafruit_LSM9DS0 lsm = Adafruit_LSM9DS0(LSM9DS0_XM_CS, LSM9DS0_GYRO_CS, 1000);
 
 //Define Variables we'll be connecting to
 double Setpoint, Input, Output;
 
- // object for PIDs
-PID PID_activateMagneticBrakes(&Input, &Output, &Setpoint,2,5,1, DIRECT);
+// Object for PIDs
+// PID PID_activateMagneticBrakes(&Input, &Output, &Setpoint,2,5,1, DIRECT);
 // PID PID_liftLevitationArrays;
 // PID PID_activateDiskBrakes;
 // PID PID_deactivateMagneticBrakes;
@@ -24,16 +41,46 @@ void setup()
 	// -------------------------------------------------------------------
 	// Make sure the Control UDOO is receiving sensor data from Read UDOO
 	// -------------------------------------------------------------------
+		
+		// Temperature/Pressure & Voltage/Current (possibly unnecessary?)
+		
+		
+	// -------------------------------------------------------------------
+	// Make sure the Control UDOO is receiving sensor data from sensors
+	// -------------------------------------------------------------------	
 	
-	// Temperature, Voltage, Current (possibly unnecessary?)
+	// Accelerometer/Gyroscope - Reading directly from sensor via SPI
 	
-	// Accelerometer
+		#ifndef ESP8266
+		while (!Serial);     // will pause Zero, Leonardo, etc until serial console opens
+		#endif
+		Serial.begin(9600);
+		Serial.println(F("LSM9DS0 9DOF Sensor Test")); Serial.println("");
 	
-	// Proximity
+		/* Initialize the sensor */
+		if(!lsm.begin())
+		{
+			/* There was a problem detecting the LSM9DS0 ... check your connections */
+			Serial.print(F("Ooops, no LSM9DS0 detected ... Check your wiring or I2C ADDR!"));
+			while(1);
+		}
+		Serial.println(F("Found LSM9DS0 9DOF"));
 	
-	// Light
+		/* Display some basic information on this sensor */
+		displaySensorDetails();
 	
-	// Encoder
+		/* Setup the sensor gain and integration time */
+		configureSensor();
+	
+		/* We're ready to go! */
+		Serial.println("");
+		
+		
+	// Proximity (Currently I2C - Will be SPI)
+	
+	// Light (I2C)
+	
+	// Encoder 
 	
 	// Make sure levitation and magnetic arrays are movable
 	
@@ -44,12 +91,47 @@ void setup()
 	// Send green light signal to remote computer
 
 //
-PID_activateMagneticBrakes.SetMode(AUTOMATIC);
+// PID_activateMagneticBrakes.SetMode(AUTOMATIC);
 
 }
 
 void loop()
 {
+		
+	// --------------------------------------------------------	
+	// Printing LSM9DS0 sensor data (Accelerometer/Gyroscope)
+	// --------------------------------------------------------
+		/* Get a new sensor event */
+		sensors_event_t accel, mag, gyro, temp;
+
+		lsm.getEvent(&accel, &mag, &gyro, &temp);
+
+		// print out acceleration data
+		Serial.print("Accel X: "); Serial.print(accel.acceleration.x); Serial.print(" ");
+		Serial.print("  \tY: "); Serial.print(accel.acceleration.y);       Serial.print(" ");
+		Serial.print("  \tZ: "); Serial.print(accel.acceleration.z);     Serial.println("  \tm/s^2");
+
+		// print out magnetometer data
+		Serial.print("Magn. X: "); Serial.print(mag.magnetic.x); Serial.print(" ");
+		Serial.print("  \tY: "); Serial.print(mag.magnetic.y);       Serial.print(" ");
+		Serial.print("  \tZ: "); Serial.print(mag.magnetic.z);     Serial.println("  \tgauss");
+	
+		// print out gyroscopic data
+		Serial.print("Gyro  X: "); Serial.print(gyro.gyro.x); Serial.print(" ");
+		Serial.print("  \tY: "); Serial.print(gyro.gyro.y);       Serial.print(" ");
+		Serial.print("  \tZ: "); Serial.print(gyro.gyro.z);     Serial.println("  \tdps");
+
+		// print out temperature data
+		Serial.print("Temp: "); Serial.print(temp.temperature); Serial.println(" *C");
+
+		Serial.println("**********************\n");
+
+		delay(250);
+	
+	// --------------------------------------------------------
+	// Place other sensor data here
+	// --------------------------------------------------------
+	
 	// Get critical info (velocity and pod position) only and determine logic stage
 	// --> measured in m, m/s, m/s^2 respectively
 	essentialData.position = 1; // really will be something like - essentialData.position = readUDOO.position; or something like that idk
@@ -83,7 +165,7 @@ void loop()
 		stage = 6;
 	}
 	
-		
+	
 	// Get other data every ¿1000? iterations (and send to remote computer?)
 	// Check voltage, temperature, and current
 	

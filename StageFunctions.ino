@@ -41,7 +41,7 @@ void activateMagneticBrakes () {
 	
 	// PID loops using encoder, proximity sensor
 	
-PID_activateMagneticBrakes.Compute();
+//PID_activateMagneticBrakes.Compute();
 	
 	
 	// stop at 0.1 inches from I-beam
