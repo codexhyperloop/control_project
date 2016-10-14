@@ -4,6 +4,9 @@
 #include <Adafruit_Sensor.h>
 #include <Adafruit_LSM9DS0.h>
 
+//For PID loops
+//#include <PID_v1.h>
+
 typedef struct {
 	float position, velocity, acceleration;
 } physicsData;

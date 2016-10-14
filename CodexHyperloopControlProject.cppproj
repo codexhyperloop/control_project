@@ -697,9 +697,6 @@ build.arch=SAM
     <Folder Include="__vm\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adafruit_L3GD20.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="__vm\.Codex%2520Hyperloop%2520Control%2520Project.vsarduino.h">
       <SubType>compile</SubType>
     </Compile>
